@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,7 +103,154 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: oyun_ekrani_0
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1664
+        width: 357
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4e055eb7b0ae13479555b6b691e4ba2
+      internalID: -2011927240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun_ekrani_1
+      rect:
+        serializedVersion: 2
+        x: 1702
+        y: 1652
+        width: 93
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9789803581181d245a8e3400209723f0
+      internalID: -222951538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun_ekrani_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1506
+        width: 401
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a90ac0d9aa8475949a2bf27a1298498f
+      internalID: 1868057948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun_ekrani_3
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 1570
+        width: 377
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21ef48fded6edea4585f1f8db5c60602
+      internalID: -346032778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun_ekrani_4
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 1431
+        width: 218
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34559f0cb09be5546a8bee439d698c85
+      internalID: -1445465269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun_ekrani_5
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 108
+        width: 135
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 920b3acc49db1ed44bba3298d40a0fb2
+      internalID: 1271838760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oyun_ekrani_6
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 108
+        width: 303
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bf5bfe5d0cdd2f4fa4fdeeceabcfb6a
+      internalID: 2048416200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +261,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      oyun_ekrani_0: -2011927240
+      oyun_ekrani_1: -222951538
+      oyun_ekrani_2: 1868057948
+      oyun_ekrani_3: -346032778
+      oyun_ekrani_4: -1445465269
+      oyun_ekrani_5: 1271838760
+      oyun_ekrani_6: 2048416200
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
