@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 061069f057c61ba40a169f8bd002f39d
+guid: b527a14bbf53d7448b175821ddfc6abe
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,22 +105,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: duvar2_0
+      name: YANDUVAR_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 15
+        x: 13
+        y: 6
         width: 7
-        height: 17
+        height: 16
       alignment: 9
-      pivot: {x: 1.1428572, y: 0.5294118}
+      pivot: {x: -0.14285715, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f8fb3fb7bb25f245a1f43693f7e75aa
-      internalID: -1149949889
+      spriteID: c82b33734c5a22246aecc5494933558c
+      internalID: -216577966
       vertices: []
       indices: 
       edges: []
@@ -136,7 +136,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      duvar2_0: -1149949889
+      YANDUVAR_0: -216577966
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
