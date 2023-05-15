@@ -4,17 +4,25 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int _maxHealth = 10; //max canımız
-    public int _health; //güncel can
+    public int maxHealth = 10; //max canımız
+    public int currentHealth; //güncel can
+
+    public HealthBarScript healthBar;
+
+
+
     void Start()
     {
-        _health = _maxHealth; //başlangıçta canımız güncel cana eşit
+        currentHealth = maxHealth; //başlangıçta canımız güncel cana eşit
+        healthBar.SetMaxHealth(maxHealth);
     }
 
     public void TakeDamage(int damage)
     {
-        _health -= damage; //burayı tam anlamadım
-        if (_health <= 0) //güncel canımız 0'a küçük eşitse
+        currentHealth -= damage; //burayı tam anlamadım
+        healthBar.SetHealth(currentHealth);
+
+        if (currentHealth <= 0) //güncel canımız 0'a küçük eşitse
         {
             Destroy(gameObject); //bu objeyi yok et.
         }
@@ -22,6 +30,8 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetKeyDown(KeyCode.Space)){
+            TakeDamage(2);
+        }
     }
 }

@@ -1333,7 +1333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8196079, g: 0.003921569, b: 0.027450982, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1688,8 +1688,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e54c6aeafeaac63449e84c5b1d178a52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 10
-  _health: 0
+  maxHealth: 10
+  currentHealth: 10
+  healthBar: {fileID: 1704285835}
 --- !u!114 &706273395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2635,6 +2636,7 @@ GameObject:
   - component: {fileID: 1704285834}
   - component: {fileID: 1704285833}
   - component: {fileID: 1704285832}
+  - component: {fileID: 1704285835}
   m_Layer: 5
   m_Name: HealtBar
   m_TagString: Untagged
@@ -2703,7 +2705,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1704285833}
   m_FillRect: {fileID: 463244956}
   m_HandleRect: {fileID: 0}
@@ -2711,7 +2713,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2753,6 +2755,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1704285830}
   m_CullTransparentMesh: 1
+--- !u!114 &1704285835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704285830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e0e0d9b74c775841896c4fb670c6eb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 1704285832}
 --- !u!1 &1727467517
 GameObject:
   m_ObjectHideFlags: 0
