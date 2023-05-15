@@ -20,7 +20,17 @@ public class PlayerController : MonoBehaviour
     {
         _movement.x = Input.GetAxis("Horizontal");
         _movement.y = Input.GetAxis("Vertical");
-        
+        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition); //mouse poz.
+        Vector2 characterPos = transform.position; //karakter poz.
+        float diff = mousePos.x - characterPos.x; //mouse poz karakter poz farkını alıyorum ki karakter sağa sola döndüğünü anlayabileyim
+        if (diff < 0) //eğer fark sıfırdan azsa
+        {
+            GetComponent<SpriteRenderer>().flipX = false; //çevirme
+        }
+        else if (diff > 0) //eğer fazlaysa
+        {
+            GetComponent<SpriteRenderer>().flipX = true; //karakteri çevir
+        }
         //x ve y yönünde hareket edeceğim için unity içinde hazır tanımlanmış horizontal ve vertical değerlerine eşitledim
     }
 
