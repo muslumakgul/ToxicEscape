@@ -14,6 +14,11 @@ public class EnemyDamage : MonoBehaviour
         {
             playerHealth.TakeDamage(damage);    //diğer scriptteki damage fonksiyonunu çalıştır
         }
+
+        if ((col.gameObject.tag == "Bullet"))
+        {
+            Destroy(gameObject);
+        }
     }
 
     void Start()
