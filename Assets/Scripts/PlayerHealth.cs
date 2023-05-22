@@ -1,14 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class PlayerHealth : MonoBehaviour
 {
     public int maxHealth = 10; //max canımız
     public int currentHealth; //güncel can
 
     public HealthBarScript healthBar;
-
+    //public PlayAgain playAgain;
 
 
     void Start()
@@ -25,6 +25,7 @@ public class PlayerHealth : MonoBehaviour
         if (currentHealth <= 0) //güncel canımız 0'a küçük eşitse
         {
             Destroy(gameObject); //bu objeyi yok et.
+            SceneManager.LoadScene("MainMenu");
         }
     }
     // Update is called once per frame

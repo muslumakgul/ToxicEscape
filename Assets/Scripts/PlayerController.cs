@@ -49,4 +49,13 @@ public class PlayerController : MonoBehaviour
         
         //normalde bu false ve true tam tersi şeklinde olmalıydı. ama karakterimizin default duruşu sola doğru olduğu için tersini yaptık.
     }
+    
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Key"))
+        {
+            // Anahtara çarpıldığında anahtarı al
+            collision.gameObject.GetComponent<Key>().PickupKey();
+        }
+    }
 }

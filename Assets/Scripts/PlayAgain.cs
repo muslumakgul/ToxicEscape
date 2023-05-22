@@ -8,6 +8,11 @@ public class PlayAgain : MonoBehaviour
     {
         SceneManager.LoadScene("Level1");
     }
+
+    public void GotoMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
     void Start()
     {
         
