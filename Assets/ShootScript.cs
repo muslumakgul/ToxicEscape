@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
 
 public class ShootScript : MonoBehaviour
 {
+
+    AudioSource shootingSound;
+
 
     public Transform Gun;
     Vector2 direction;
@@ -16,10 +20,12 @@ public class ShootScript : MonoBehaviour
     public float fireRate;
     float ReadyForNextShot;
 
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
+        shootingSound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -31,6 +37,7 @@ public class ShootScript : MonoBehaviour
 
         if(Input.GetMouseButtonDown(0)){
             if(Time.time > ReadyForNextShot){
+                shootingSound.Play();
                 ReadyForNextShot = Time.time + (1/fireRate);
                 shoot();
             }
