@@ -7,8 +7,7 @@ public class ShootScript : MonoBehaviour
 
     public Transform Gun;
     Vector2 direction;
-
-    AudioSource shootingSound;
+    private AudioScript audioScript;
 
 
     public GameObject Bullet;
@@ -21,7 +20,7 @@ public class ShootScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        shootingSound = GetComponent<AudioSource>();
+        audioScript = FindObjectOfType<AudioScript>();
     }
 
     // Update is called once per frame
@@ -33,9 +32,9 @@ public class ShootScript : MonoBehaviour
 
         if(Input.GetMouseButtonDown(0)){
             if(Time.time > ReadyForNextShot){
-                shootingSound.Play();
                 ReadyForNextShot = Time.time + (1/fireRate);
                 shoot();
+                audioScript.PlayShootSound();
             }
         }
     }

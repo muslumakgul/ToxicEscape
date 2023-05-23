@@ -7,7 +7,6 @@ public class PlayerBullet : MonoBehaviour
 
     public int setMaxBulletAmount = 15;
     public int currentBulletAmount;
-
     public BulletBarScript bulletBar;
 
 
@@ -32,3 +31,4 @@ public class PlayerBullet : MonoBehaviour
         bulletBar.setBulletAmount(currentBulletAmount);
     }
 }
+

@@ -8,6 +8,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AudioScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Door.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyDamage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -77,7 +78,8 @@
       <workItem from="1684181856418" duration="2339000" />
       <workItem from="1684185841796" duration="801000" />
       <workItem from="1684217429244" duration="594000" />
-      <workItem from="1684774168103" duration="6237000" />
+      <workItem from="1684774168103" duration="7151000" />
+      <workItem from="1684824130363" duration="3305000" />
     </task>
     <servers />
   </component>
