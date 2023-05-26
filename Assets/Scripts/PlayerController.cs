@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     public float speed = 10.0f;
     public float rotationSpeed = 100.0f;
     private Vector2 _movement;
+    public float speedIncreaseAmount;
+    public float speedIncreaseDuration;
     void Start()
     {
         _rb = gameObject.GetComponent<Rigidbody2D>();
@@ -33,7 +35,6 @@ public class PlayerController : MonoBehaviour
         }
         //x ve y yönünde hareket edeceğim için unity içinde hazır tanımlanmış horizontal ve vertical değerlerine eşitledim
     }
-
     private void FixedUpdate()
     {
         _rb.MovePosition(_rb.position + _movement * (speed * Time.deltaTime));

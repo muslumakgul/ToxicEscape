@@ -21,6 +21,7 @@ public class ShootScript : MonoBehaviour
     void Start()
     {
         audioScript = FindObjectOfType<AudioScript>();
+        
     }
 
     // Update is called once per frame

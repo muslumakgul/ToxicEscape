@@ -9,7 +9,7 @@ public class CoinCounter : MonoBehaviour
 {
     public Text _myScoreText; //text oluşturduk ki yazı olarak yazdırabilelim
     private int scoreNum; //score sayımızı tutacak değer
-    
+    public AudioScript audioScript;
     void Start() //başlangıçta
     {
         scoreNum = 0; //scoreumu 0'dan başlat
@@ -21,6 +21,7 @@ public class CoinCounter : MonoBehaviour
         if (coin.tag == "Coin") //temas ettiğimiz şey yani colliderın tag'i coin ise
         {
             scoreNum++; //scoreumu arttır
+            audioScript.PlayCoinSound();
             Destroy(coin.gameObject); //temas ettiğim coini yok et
             _myScoreText.text = "Score" + scoreNum; //scoreumu yaz
         }

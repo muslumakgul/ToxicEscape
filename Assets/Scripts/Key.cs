@@ -5,11 +5,12 @@ using UnityEngine;
 public class Key : MonoBehaviour
 {
     public GameObject door; // Kapı GameObject referansı
-
+    public AudioScript audioScript;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
+            audioScript.PlayKeySound();
             // Anahtar alındığında kapıyı aç
             door.GetComponent<Door>().OpenDoor();
             // Anahtar GameObject'i yok et
