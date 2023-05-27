@@ -16,6 +16,7 @@ public class PlayerHealth : MonoBehaviour
         currentHealth = maxHealth; //başlangıçta canımız güncel cana eşit
         healthBar.SetMaxHealth(maxHealth);
     }
+    
 
     public void TakeDamage(int damage)
     {

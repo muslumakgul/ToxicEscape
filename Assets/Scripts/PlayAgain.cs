@@ -13,6 +13,11 @@ public class PlayAgain : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void LevelUp()
+    {
+        SceneManager.LoadScene("Level2");
+    }
     void Start()
     {
         

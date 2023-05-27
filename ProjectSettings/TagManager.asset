@@ -9,6 +9,10 @@ TagManager:
   - Bullet
   - Key
   - Potion
+  - Capsule
+  - Ball
+  - EnemyCastle
+  - OurCastle
   layers:
   - Default
   - TransparentFX

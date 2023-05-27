@@ -9,7 +9,13 @@ public class EnemyDamage : MonoBehaviour
     public PlayerHealth playerHealth; //diğer scriptle bağladık referans
     // public EnemyManager enemyManager; 
     public AudioScript audioScript;
+    public EnemyManager enemyManager;
     
+    private void Start()
+    {
+        // enemyManager referansını al
+        enemyManager = GameObject.FindObjectOfType<EnemyManager>();
+    }
     private void OnCollisionEnter2D(Collision2D col) //oncollisionenter karakterle düşmanın birbirine temas anı
     {
         if (col.gameObject.tag == "Player") //eğer temas edenin tag'i player'sa
@@ -20,6 +26,7 @@ public class EnemyDamage : MonoBehaviour
 
         if ((col.gameObject.tag == "Bullet"))
         {
+            enemyManager.CheckEnemiesDestroyed();
             Destroy(gameObject);
             // enemyManager.EnemyDestroyed();
         }
