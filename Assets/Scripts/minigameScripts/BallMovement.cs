@@ -8,13 +8,14 @@ using Random = UnityEngine.Random;
 public class BallMovement : MonoBehaviour
 {
     public float startSpeed = 5f; // Başlangıç hızı
-
+    public Vector3 startPosition;
     public Rigidbody2D rb;
     //private Vector2 initialVelocity; // Başlangıçtaki hızı tutmak için
     //private bool isMovingRight = true; // Topun başlangıçta sağa doğru hareket ettiğini belirtmek için
 
     private void Start()
     {
+        startPosition = transform.position;
         Launch();
     }
 
@@ -23,6 +24,13 @@ public class BallMovement : MonoBehaviour
         float x = Random.Range(0, 2) == 0 ? -1 : 1;
         float y = Random.Range(0, 2) == 0 ? -1 : 1;
         rb.velocity = new Vector2(startSpeed * x, startSpeed * y);
+    }
+
+    public void Reset()
+    {
+        rb.velocity = Vector2.zero;
+        transform.position = startPosition;
+        Launch();
     }
     // private void Start()
     // {

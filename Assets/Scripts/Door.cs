@@ -5,7 +5,6 @@ using UnityEngine;
 public class Door : MonoBehaviour
 {
     private bool isOpen = false; // Kapının açık veya kapalı olduğunu takip eden bir değişken
-
     public void OpenDoor()
     {
         // Kapıyı aç
@@ -15,7 +14,6 @@ public class Door : MonoBehaviour
         isOpen = true;
     }
     
-
     public bool IsOpen()
     {
         return isOpen;

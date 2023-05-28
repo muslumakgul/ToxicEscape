@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 40e072b23c2abdb4b80b27de0d45e6ac
+guid: 7d61d873fd194074980286aa8f57ed0e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1024
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,43 +105,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kasa Acilis_0
+      name: dusmanlar_0
       rect:
         serializedVersion: 2
-        x: 64
-        y: 48
-        width: 384
-        height: 368
+        x: 206
+        y: 231
+        width: 126
+        height: 190
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67fc1eb7944196d4d8d1daf33f458c4d
-      internalID: -634043011
+      spriteID: f36bffa870b7e1640bbea14404eb023e
+      internalID: 2120981444
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kasa Acilis_1
+      name: dusmanlar_1
       rect:
         serializedVersion: 2
-        x: 576
-        y: 48
-        width: 384
-        height: 368
+        x: 353
+        y: 351
+        width: 87
+        height: 71
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b356676a3cfbaf419e5704ea5ba69f9
-      internalID: 380602456
+      spriteID: 3e163ee3c61e18440865a744e59ec838
+      internalID: -1083597187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dusmanlar_2
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 116
+        width: 143
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 204124cb42d624b43a0291482ff0779e
+      internalID: 891701171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dusmanlar_3
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 123
+        width: 97
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c27c4325e68758043a506ab462a22524
+      internalID: 1288039763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dusmanlar_4
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 15
+        width: 119
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 586b906e7090d66459127d941d1108c4
+      internalID: -1001335794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dusmanlar_5
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 30
+        width: 99
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2114e67ab5bb1e4dae09a1c8a68f2b0
+      internalID: -338439121
       vertices: []
       indices: 
       edges: []
@@ -157,11 +241,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Kasa Acilis_0: -634043011
-      Kasa Acilis_1: 380602456
+      dusmanlar_0: 2120981444
+      dusmanlar_1: -1083597187
+      dusmanlar_2: 891701171
+      dusmanlar_3: 1288039763
+      dusmanlar_4: -1001335794
+      dusmanlar_5: -338439121
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
+  pSDShowRemoveMatteOption: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 

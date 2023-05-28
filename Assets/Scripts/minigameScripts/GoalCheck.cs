@@ -1,13 +1,29 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GoalCheck : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public bool isPlayer1Goal;
     void Start()
     {
         
+    }
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.CompareTag("Ball"))
+        {
+            if (!isPlayer1Goal)
+            {
+                GameObject.Find("GameManager").GetComponent<GameManager>().player2Scored();
+            }
+            else
+            {
+                GameObject.Find("GameManager").GetComponent<GameManager>().player1Scored();
+            }
+        }
     }
 
     // Update is called once per frame
@@ -16,17 +32,19 @@ public class GoalCheck : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter2D(Collision2D col) //oncollisionenter karakterle düşmanın birbirine temas anı
-    {
-        if (col.gameObject.tag == "EnemyCastle") //eğer temas edenin tag'i player'sa
-        {
-            Debug.Log("SCORE +1");
-            Destroy(gameObject);
-        }
-        else if(col.gameObject.tag == "OurCastle")
-        {
-            Debug.Log("SKORE -1");
-            Destroy(gameObject);
-        }
-    }
+    // private void OnCollisionEnter2D(Collision2D col) //oncollisionenter karakterle düşmanın birbirine temas anı
+    // {
+    //     if (col.gameObject.tag == "EnemyCastle") //eğer temas edenin tag'i player'sa
+    //     {
+    //         Debug.Log("SCORE +1");
+    //         GameObject.Find("GameManager").GetComponent<GameManager>().player1Scored();
+    //         Destroy(gameObject);
+    //     }
+    //     else if(col.gameObject.tag == "OurCastle")
+    //     {
+    //         Debug.Log("SKORE -1");
+    //         GameObject.Find("GameManager").GetComponent<GameManager>().player2Scored();
+    //         Destroy(gameObject);
+    //     }
+    // }
 }
