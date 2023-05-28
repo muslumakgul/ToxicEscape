@@ -22,7 +22,7 @@ public class leveldoorforlevel1 : MonoBehaviour
     
     private void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.tag == "Player")
+        if (col.gameObject.tag == "Player" && isOpen)
         {
             playAgain.LevelUp();
         }

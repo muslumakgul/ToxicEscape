@@ -1721,10 +1721,10 @@ MonoBehaviour:
   player: {fileID: 706273390}
   movementSpeed: 1
   detectionRange: 2
-  damage: 0
-  playerHealth: {fileID: 0}
-  audioScript: {fileID: 0}
-  enemyManager: {fileID: 0}
+  damage: 3
+  playerHealth: {fileID: 706273394}
+  audioScript: {fileID: 1889820613}
+  enemyManager: {fileID: 750408753}
 --- !u!1 &463244955
 GameObject:
   m_ObjectHideFlags: 0
