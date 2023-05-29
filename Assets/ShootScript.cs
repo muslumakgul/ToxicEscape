@@ -1,14 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class ShootScript : MonoBehaviour
-{
+public class ShootScript : MonoBehaviour {
 
     public Transform Gun;
     Vector2 direction;
     private AudioScript audioScript;
-
+    public int setMaxBulletAmount = 15;
 
     public GameObject Bullet;
     public float BulletSpeed;
@@ -32,10 +29,13 @@ public class ShootScript : MonoBehaviour
         FaceMouse();
 
         if(Input.GetMouseButtonDown(0)){
-            if(Time.time > ReadyForNextShot){
+            if(Time.time > ReadyForNextShot ){
                 ReadyForNextShot = Time.time + (1/fireRate);
-                shoot();
-                audioScript.PlayShootSound();
+                if(setMaxBulletAmount > 0){
+                    shoot();
+                    audioScript.PlayShootSound();
+                }
+                setMaxBulletAmount--;
             }
         }
     }

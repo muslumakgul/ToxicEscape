@@ -21,7 +21,9 @@ public class PlayerBullet : MonoBehaviour
     void Update()
     {
         if (Input.GetMouseButtonDown(0)){
-            DecreaseBulletAmount(1);
+            if(currentBulletAmount > 0){
+                DecreaseBulletAmount(1);
+            }
         }
     }
 
@@ -31,4 +33,3 @@ public class PlayerBullet : MonoBehaviour
         bulletBar.setBulletAmount(currentBulletAmount);
     }
 }
-
