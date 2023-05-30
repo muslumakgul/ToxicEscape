@@ -238,7 +238,7 @@ MonoBehaviour:
     late.
   - Good luck! The fate of this world rests in your hands.
   contButton: {fileID: 1628334257}
-  wordSpeed: 0.1
+  wordSpeed: 0.0001
   playerIsClose: 0
   shootScript: {fileID: 774043086}
   gun: {fileID: 1253022187}

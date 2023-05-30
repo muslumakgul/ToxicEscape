@@ -587,6 +587,8 @@ GameObject:
   m_Component:
   - component: {fileID: 84490333}
   - component: {fileID: 84490332}
+  - component: {fileID: 84490334}
+  - component: {fileID: 84490335}
   m_Layer: 0
   m_Name: Kasa Acilis_0
   m_TagString: Untagged
@@ -661,6 +663,48 @@ Transform:
   m_Father: {fileID: 1805176983}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &84490334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84490331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4d7089fd96899642860e528a06371a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 706273388}
+  playerBullet: {fileID: 706273395}
+  increaseBulletAmmo: 5
+  shootScript: {fileID: 706273392}
+--- !u!61 &84490335
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84490331}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.375, y: 0.359375}
+    newSize: {x: 3.84, y: 3.68}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.375, y: 0.359375}
+  m_EdgeRadius: 0
 --- !u!1 &114117546
 GameObject:
   m_ObjectHideFlags: 0
@@ -2391,6 +2435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _myScoreText: {fileID: 1259748080}
+  scoreNum: 0
   audioScript: {fileID: 1889820613}
 --- !u!114 &706273392
 MonoBehaviour:
@@ -2567,6 +2612,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playAgain: {fileID: 1822736796}
+  coinCounter: {fileID: 0}
+  playerHealth: {fileID: 0}
 --- !u!1 &756536934
 GameObject:
   m_ObjectHideFlags: 0
@@ -23383,6 +23430,9 @@ MonoBehaviour:
   gameoverSound: {fileID: 689039209}
   coinSound: {fileID: 2086336162}
   keySound: {fileID: 920499276}
+  goalSound: {fileID: 0}
+  pongSound: {fileID: 0}
+  mumbleSound: {fileID: 0}
 --- !u!4 &1889820614
 Transform:
   m_ObjectHideFlags: 0
