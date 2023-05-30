@@ -15,6 +15,7 @@ public class speakwithNPC : MonoBehaviour
     public ShootScript shootScript;
     public GameObject gun;
     public PlayerBullet playerBullet;
+    public AudioScript audioScript;
     void Start()
     {
         
@@ -46,10 +47,12 @@ public class speakwithNPC : MonoBehaviour
 
     IEnumerator Typing()
     {
+        audioScript.PlayMumbleNPCSound();
         foreach (char letter in dialogue[index].ToCharArray())
         {
             dialogueText.text += letter;
             yield return new WaitForSeconds(wordSpeed);
+            
         }
     }
 

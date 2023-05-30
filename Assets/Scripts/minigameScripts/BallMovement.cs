@@ -32,6 +32,7 @@ public class BallMovement : MonoBehaviour
         transform.position = startPosition;
         Launch();
     }
+    
     // private void Start()
     // {
     //     rb = GetComponent<Rigidbody2D>();

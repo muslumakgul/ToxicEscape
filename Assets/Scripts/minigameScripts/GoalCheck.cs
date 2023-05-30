@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class GoalCheck : MonoBehaviour
 {
+    public AudioScript audioScript;
     public bool isPlayer1Goal;
     void Start()
     {
@@ -18,10 +19,12 @@ public class GoalCheck : MonoBehaviour
             if (!isPlayer1Goal)
             {
                 GameObject.Find("GameManager").GetComponent<GameManager>().player2Scored();
+                audioScript.playGoalSound();
             }
             else
             {
                 GameObject.Find("GameManager").GetComponent<GameManager>().player1Scored();
+                audioScript.playGoalSound();
             }
         }
     }

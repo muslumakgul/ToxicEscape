@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
 
     private int player1Score;
     private int player2Score;
-
+    public GameObject panel;
     public void player1Scored()
     {
         player1Score++;
@@ -28,6 +28,8 @@ public class GameManager : MonoBehaviour
         if (player1Score == 3)
         {
             Debug.Log("TEBRIKLER KAZANDINIZ!");
+            TogglePauseGame();
+            panel.SetActive(true);
         }
     }
     public void player2Scored()
@@ -40,12 +42,30 @@ public class GameManager : MonoBehaviour
             Debug.Log("KAYBETTINIZ");
         }
     }
-
+    
     public void resetPosition()
     {
         ball.GetComponent<BallMovement>().Reset();
         player1paddle.GetComponent<Paddle>().Reset();
         player2paddle.GetComponent<Paddle>().Reset();
+    }
+    
+    //game pause
+    private bool isGamePaused = false;
+
+    // Oyunu duraklat veya devam ettir
+    public void TogglePauseGame()
+    {
+        isGamePaused = !isGamePaused;
+
+        if (isGamePaused)
+        {
+            Time.timeScale = 0f; // Oyun zamanını durdur
+        }
+        else
+        {
+            Time.timeScale = 1f; // Oyun zamanını normale döndür
+        }
     }
     void Start()
     {

@@ -16,6 +16,13 @@ public class PlayerBullet : MonoBehaviour
         currentBulletAmount = setMaxBulletAmount;
         bulletBar.SetMaxBulletAmount(setMaxBulletAmount);
     }
+    
+    // void Start()
+    // {
+    //     currentBulletAmount = PlayerData.Instance.bulletCount;
+    //     bulletBar.SetMaxBulletAmount(setMaxBulletAmount);
+    //     bulletBar.setBulletAmount(currentBulletAmount);
+    // }
 
     // Update is called once per frame
     void Update()

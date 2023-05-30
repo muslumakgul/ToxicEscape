@@ -12,6 +12,7 @@ public class Paddle : MonoBehaviour
     public float AIspeed;
     private Vector2 _forwardDirection;
     private float _movement;
+    public AudioScript audioScript;
     void Start()
     {
         ball = GameObject.FindGameObjectWithTag("Ball").GetComponent<BallMovement>();
@@ -43,6 +44,18 @@ public class Paddle : MonoBehaviour
         
         
         rb.velocity = new Vector2(rb.velocity.x, _movement * speed);
+    }
+    
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ball")) // Eğer çarpışma top ile gerçekleştiyse
+        {
+            // Topun paddle'la temas ettiği yere göre yapılacak işlemleri buraya ekleyebilirsiniz
+            Vector2 contactPoint = collision.GetContact(0).point;
+            audioScript.PongSound();
+            // İstenilen komutları burada gerçekleştirin
+            Debug.Log("carpısma gerceklesti");
+        }
     }
 
     public void Reset()
@@ -80,4 +93,5 @@ public class Paddle : MonoBehaviour
         float dotP = Vector2.Dot(ball.rb.velocity, _forwardDirection);
         return dotP < 0f;
     }
+    
 }

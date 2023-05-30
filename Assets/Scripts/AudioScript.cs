@@ -11,7 +11,9 @@ public class AudioScript : MonoBehaviour
     public AudioSource gameoverSound;
     public AudioSource coinSound;
     public AudioSource keySound;
-    
+    public AudioSource goalSound;
+    public AudioSource pongSound;
+    public AudioSource mumbleSound;
     // public void PlayBackgroundMusic()
     // {
     //     if (backgroundSound != null)
@@ -76,6 +78,29 @@ public class AudioScript : MonoBehaviour
         }
     }
     
+    public void PongSound()
+    {
+        if (pongSound != null)
+        {
+            pongSound.Play();
+        }
+    }
+
+    public void playGoalSound()
+    {
+        if (goalSound != null)
+        {
+            goalSound.Play();
+        }
+    }
+    
+    public void PlayMumbleNPCSound()
+    {
+        if (mumbleSound != null)
+        {
+            mumbleSound.Play();
+        }
+    }
 
     // Update is called once per frame
     void Update()

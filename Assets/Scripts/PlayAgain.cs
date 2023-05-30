@@ -18,6 +18,11 @@ public class PlayAgain : MonoBehaviour
     {
         SceneManager.LoadScene("Level2");
     }
+
+    public void Minigame()
+    {
+        SceneManager.LoadScene("MiniGame");
+    }
     void Start()
     {
         

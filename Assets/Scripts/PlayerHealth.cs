@@ -8,15 +8,19 @@ public class PlayerHealth : MonoBehaviour
     public PlayAgain playagain;
     public HealthBarScript healthBar;
     //public PlayAgain playAgain;
-    public AudioScript audioScript; 
-    
-    
+    public AudioScript audioScript;
+    //private PlayerData _playerData;
+
     void Start()
     {
         currentHealth = maxHealth; //başlangıçta canımız güncel cana eşit
         healthBar.SetMaxHealth(maxHealth);
     }
-    
+    // void Start()
+    // {
+    //     PlayerData.Instance.UpdateHealth(maxHealth);
+    //     healthBar.SetMaxHealth(maxHealth);
+    // }
 
     public void TakeDamage(int damage)
     {
@@ -30,11 +34,12 @@ public class PlayerHealth : MonoBehaviour
             playagain.GotoMainMenu();
         }
     }
+    // }
     // Update is called once per frame
-    void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Space)){
-            TakeDamage(2);
-        }
-    }
+    // void Update()
+    // {
+    //     if(Input.GetKeyDown(KeyCode.Space)){
+    //         TakeDamage(2);
+    //     }
+    // }
 }
