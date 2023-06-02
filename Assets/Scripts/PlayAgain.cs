@@ -23,6 +23,11 @@ public class PlayAgain : MonoBehaviour
     {
         SceneManager.LoadScene("MiniGame");
     }
+    
+    public void gotolevel3()
+    {
+        SceneManager.LoadScene("Level3");
+    }
     void Start()
     {
         

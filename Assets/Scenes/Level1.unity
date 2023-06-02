@@ -13620,7 +13620,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7175674042286626313, guid: 4957190334682524fae138fb411666df, type: 3}
       propertyPath: m_FlipX
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7175674042286626313, guid: 4957190334682524fae138fb411666df, type: 3}
       propertyPath: m_SortingOrder
@@ -13731,6 +13731,7 @@ MonoBehaviour:
   rotationSpeed: 50
   speedIncreaseAmount: 5
   speedIncreaseDuration: 0
+  playerAnimator: {fileID: 0}
 --- !u!61 &774043089
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13748,8 +13749,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.75, y: 0.85}
-    newSize: {x: 0.15, y: 0.17}
+    oldSize: {x: 0.93, y: 1.44}
+    newSize: {x: 0.68499994, y: 1.27}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0

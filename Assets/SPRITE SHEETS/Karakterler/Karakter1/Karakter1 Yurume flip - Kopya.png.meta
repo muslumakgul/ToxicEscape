@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 643b69d65221c324aa18faade3af7b88
+guid: b569b977ccebf244bad2c20091971815
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,74 +105,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Karakter1 Yurume2_0
+      name: Karakter1 Yurume flip - Kopya_0
       rect:
         serializedVersion: 2
         x: 124
-        y: 52
-        width: 328
-        height: 472
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f2cd24712f198cd41b988ae5e98e8483
-      internalID: -2061787294
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Karakter1 Yurume2_1
-      rect:
-        serializedVersion: 2
-        x: 772
-        y: 34
-        width: 256
-        height: 472
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 37581ecbd21c93047a7f22af0fb9c724
-      internalID: 1278168289
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Karakter1 Yurume2_2
-      rect:
-        serializedVersion: 2
-        x: 1348
-        y: 34
-        width: 256
-        height: 490
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1eafab118e5cc0d478f12fb577deea83
-      internalID: -563491591
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Karakter1 Yurume2_3
-      rect:
-        serializedVersion: 2
-        x: 1834
-        y: 70
+        y: 79
         width: 346
         height: 454
       alignment: 0
@@ -182,8 +119,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f635f6ce20123e143abd0c8d1c5c80fc
-      internalID: -1956904969
+      spriteID: b82eff2b19f7fc44aa6f754909ff7b08
+      internalID: -1947471444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karakter1 Yurume flip - Kopya_1
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 43
+        width: 256
+        height: 490
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9fa02dca376dd64eb3511a4a2be650b
+      internalID: 1201830602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karakter1 Yurume flip - Kopya_2
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 43
+        width: 256
+        height: 472
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f52bc08798f59a44ad561ccd28ddfc1
+      internalID: -1556027010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Karakter1 Yurume flip - Kopya_3
+      rect:
+        serializedVersion: 2
+        x: 1852
+        y: 61
+        width: 328
+        height: 472
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0be903bef2acf3647bc7f1260a76b9b7
+      internalID: -529684556
       vertices: []
       indices: 
       edges: []
@@ -199,10 +199,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Karakter1 Yurume2_0: -2061787294
-      Karakter1 Yurume2_1: 1278168289
-      Karakter1 Yurume2_2: -563491591
-      Karakter1 Yurume2_3: -1956904969
+      Karakter1 Yurume flip - Kopya_0: -1947471444
+      Karakter1 Yurume flip - Kopya_1: 1201830602
+      Karakter1 Yurume flip - Kopya_2: -1556027010
+      Karakter1 Yurume flip - Kopya_3: -529684556
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

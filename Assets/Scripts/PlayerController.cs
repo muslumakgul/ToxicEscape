@@ -12,41 +12,46 @@ public class PlayerController : MonoBehaviour
     private Vector2 _movement;
     public float speedIncreaseAmount;
     public float speedIncreaseDuration;
+    public Animator playerAnimator;
     void Start()
     {
         _rb = gameObject.GetComponent<Rigidbody2D>();
         _sr = gameObject.GetComponent<SpriteRenderer>();
         //bu kodu atacağım objenin (gameObject) içindeki rigibody2d ve spriterendererının componentine ulaş.
+        playerAnimator = gameObject.GetComponent<Animator>();
     }
     void Update()
     {
         _movement.x = Input.GetAxis("Horizontal");
         _movement.y = Input.GetAxis("Vertical");
+        playerAnimator.SetFloat("Horizontal",_movement.x); //animatordeki horizontal değerimin referans alınacağı yer
+        playerAnimator.SetFloat("Vertical",_movement.y);  //animatordeki vertical değerimin referans alınacağı yer
+        playerAnimator.SetFloat("Speed",_movement.sqrMagnitude); //animatordeki speed değerimin referans alınacağı yer (sqr) olma sebebi pozitif sayı olması gerekiyor.
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition); //mouse poz.
         Vector2 characterPos = transform.position; //karakter poz.
         float diff = mousePos.x - characterPos.x; //mouse poz karakter poz farkını alıyorum ki karakter sağa sola döndüğünü anlayabileyim
-        if (diff < 0) //eğer fark sıfırdan azsa
-        {
-            GetComponent<SpriteRenderer>().flipX = false; //çevirme
-        }
-        else if (diff > 0) //eğer fazlaysa
-        {
-            GetComponent<SpriteRenderer>().flipX = true; //karakteri çevir
-        }
-        //x ve y yönünde hareket edeceğim için unity içinde hazır tanımlanmış horizontal ve vertical değerlerine eşitledim
+        // if (diff < 0) //eğer fark sıfırdan azsa
+        // {
+        //     GetComponent<SpriteRenderer>().flipX = false; //çevirme
+        // }
+        // else if (diff > 0) //eğer fazlaysa
+        // {
+        //     GetComponent<SpriteRenderer>().flipX = true; //karakteri çevir
+        // }
+        // //x ve y yönünde hareket edeceğim için unity içinde hazır tanımlanmış horizontal ve vertical değerlerine eşitledim
     }
     private void FixedUpdate()
     {
         _rb.MovePosition(_rb.position + _movement * (speed * Time.deltaTime));
-        // rigibodyim hareketinin değerlerini burada belirttim. 
-        if (_movement.x < 0) //eğer x yönündeki hareketimin değeri 0'dan küçükse yani sola doğru ise
-        {
-            _sr.flipX = false; //sprite renderırımın içindeki flipx boolunu false yap
-        }
-        else if (_movement.x > 0)
-        {
-            _sr.flipX = true; //sprite renderırımın içindeki flipx boolunu true yap
-        }
+        // // rigibodyim hareketinin değerlerini burada belirttim. 
+        // if (_movement.x < 0) //eğer x yönündeki hareketimin değeri 0'dan küçükse yani sola doğru ise
+        // {
+        //     _sr.flipX = false; //sprite renderırımın içindeki flipx boolunu false yap
+        // }
+        // else if (_movement.x > 0)
+        // {
+        //     _sr.flipX = true; //sprite renderırımın içindeki flipx boolunu true yap
+        // }
         
         //normalde bu false ve true tam tersi şeklinde olmalıydı. ama karakterimizin default duruşu sola doğru olduğu için tersini yaptık.
     }

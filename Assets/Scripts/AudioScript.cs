@@ -39,67 +39,57 @@ public class AudioScript : MonoBehaviour
 
     public void PlayShootSound()
     {
-        if (shootSound != null)
-        {
-            shootSound.Play();
-        }
+        shootSound.Play();
     }
 
     public void PlayDamageSound()
     {
-        if (damageSound != null)
-        {
-            damageSound.Play();
-        }
+        
+        damageSound.Play();
+        
     }
 
     public void PlayGameOverSound()
     {
-        if (gameoverSound != null)
-        {
-            gameoverSound.Play();
-        }
+        
+        gameoverSound.Play();
+        
 
     }
 
     public void PlayCoinSound()
     {
-        if (coinSound != null)
-        {
-            coinSound.Play();
-        }
+        
+        coinSound.Play();
+        
     }
 
     public void PlayKeySound()
     {
-        if (keySound != null)
-        {
-            keySound.Play();
-        }
+        
+        keySound.Play();
+        
     }
     
     public void PongSound()
     {
-        if (pongSound != null)
-        {
-            pongSound.Play();
-        }
+        
+        pongSound.Play();
+        
     }
 
     public void playGoalSound()
     {
-        if (goalSound != null)
-        {
-            goalSound.Play();
-        }
+        
+        goalSound.Play();
+        
     }
     
     public void PlayMumbleNPCSound()
     {
-        if (mumbleSound != null)
-        {
-            mumbleSound.Play();
-        }
+        
+        mumbleSound.Play();
+        
     }
 
     // Update is called once per frame

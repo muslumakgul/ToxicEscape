@@ -18,7 +18,7 @@ public class LevelDoor : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-            playAgain.LevelUp();
+            playAgain.gotolevel3();
         }
     }
 

@@ -14,7 +14,7 @@ public class BossMovement : MonoBehaviour
     public EnemyManager enemyManager;
     public int MaxHealth;
     public int currentHealth;
-    
+
     // public float retreatDistance = 2f; // Geri çekilme mesafesi
     //
     // private bool isRetreating = false; // Geri çekilme durumu
@@ -24,18 +24,19 @@ public class BossMovement : MonoBehaviour
     {
         currentHealth = MaxHealth;
         enemyManager = GameObject.FindObjectOfType<EnemyManager>();
+        
     }
     private void Update()
     {
-        
         // Oyuncunun düşmanın algılama mesafesinde olup olmadığını kontrol et
         if (Vector2.Distance(transform.position, player.position) <= detectionRange)
         {
-            // Düşmanı oyuncuya doğru hareket ettir
-            Vector2 direction = player.position - transform.position;
-            transform.Translate(direction.normalized * (movementSpeed * Time.deltaTime));
+                // Düşmanı oyuncuya doğru hareket ettir
+                Vector2 direction = player.position - transform.position;
+                transform.Translate(direction.normalized * (movementSpeed * Time.deltaTime));
             
         }
+        
     }
     
     private void OnCollisionEnter2D(Collision2D col) //oncollisionenter karakterle düşmanın birbirine temas anı
@@ -61,4 +62,5 @@ public class BossMovement : MonoBehaviour
             // enemyManager.EnemyDestroyed();
         }
     }
+    
 }

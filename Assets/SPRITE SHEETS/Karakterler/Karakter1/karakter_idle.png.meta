@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 643b69d65221c324aa18faade3af7b88
+guid: 6d8c8f473f6909d4c858415e5f98e6ab
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,91 +103,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Karakter1 Yurume2_0
-      rect:
-        serializedVersion: 2
-        x: 124
-        y: 52
-        width: 328
-        height: 472
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f2cd24712f198cd41b988ae5e98e8483
-      internalID: -2061787294
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Karakter1 Yurume2_1
-      rect:
-        serializedVersion: 2
-        x: 772
-        y: 34
-        width: 256
-        height: 472
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 37581ecbd21c93047a7f22af0fb9c724
-      internalID: 1278168289
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Karakter1 Yurume2_2
-      rect:
-        serializedVersion: 2
-        x: 1348
-        y: 34
-        width: 256
-        height: 490
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1eafab118e5cc0d478f12fb577deea83
-      internalID: -563491591
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Karakter1 Yurume2_3
-      rect:
-        serializedVersion: 2
-        x: 1834
-        y: 70
-        width: 346
-        height: 454
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f635f6ce20123e143abd0c8d1c5c80fc
-      internalID: -1956904969
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -198,11 +114,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Karakter1 Yurume2_0: -2061787294
-      Karakter1 Yurume2_1: 1278168289
-      Karakter1 Yurume2_2: -563491591
-      Karakter1 Yurume2_3: -1956904969
+    nameFileIdTable: {}
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
