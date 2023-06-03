@@ -12,7 +12,7 @@ public class CoinCounter : MonoBehaviour
     public AudioScript audioScript;
     void Start() //başlangıçta
     {
-        scoreNum = 0; //scoreumu 0'dan başlat
+        scoreNum = PlayerPrefs.GetInt(nameof(scoreNum), scoreNum);
         _myScoreText.text = "" + scoreNum; //score 0 yazdırdık
     }
     
@@ -30,7 +30,13 @@ public class CoinCounter : MonoBehaviour
             audioScript.PlayCoinSound();
             Destroy(coin.gameObject); //temas ettiğim coini yok et
             _myScoreText.text = "" + scoreNum; //scoreumu yaz
+            PlayerPrefs.SetInt(nameof(scoreNum),scoreNum);
         }
+    }
+
+    void sifirla()
+    {
+        PlayerPrefs.DeleteKey(nameof(scoreNum));
     }
 
     void Update()

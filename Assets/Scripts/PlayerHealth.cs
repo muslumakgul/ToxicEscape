@@ -7,12 +7,11 @@ public class PlayerHealth : MonoBehaviour
     public int currentHealth; //güncel can
     public PlayAgain playagain;
     public HealthBarScript healthBar;
-    //public PlayAgain playAgain;
     public AudioScript audioScript;
-    //private PlayerData _playerData;
 
     void Start()
     {
+        
         currentHealth = maxHealth; //başlangıçta canımız güncel cana eşit
         healthBar.SetMaxHealth(maxHealth);
     }
@@ -26,7 +25,6 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth -= damage; //mevcut canımızı damage oranında azaltıyor.
         healthBar.SetHealth(currentHealth);
-
         if (currentHealth <= 0) //güncel canımız 0'a küçük eşitse
         {
             Destroy(gameObject); //bu objeyi yok et.
